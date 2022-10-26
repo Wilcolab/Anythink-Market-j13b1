@@ -13,4 +13,3 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 On initial setup you will need to create a github repo, and run compose-up on your docker-compose.yml file.
 
 **[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
-On initial setup you will need to create a github repo, and run compose-up on your docker-compose.yml file.
