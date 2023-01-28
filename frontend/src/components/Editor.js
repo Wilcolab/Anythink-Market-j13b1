@@ -31,10 +31,10 @@ class Editor extends React.Component {
 
     const updateFieldEvent = (key) => (ev) =>
       this.props.onUpdateField(key, ev.target.value);
-    this.changeTitle = updateFieldEvent("title");
-    this.changeDescription = updateFieldEvent("description");
-    this.changeImage = updateFieldEvent("image");
-    this.changeTagInput = updateFieldEvent("tagInput");
+      this.changeTitle = updateFieldEvent("title");
+      this.changeDescription = updateFieldEvent("description");
+      this.changeImage = updateFieldEvent("image");
+      this.changeTagInput = updateFieldEvent("tagInput");
 
     this.watchForEnter = (ev) => {
       if (ev.keyCode === 13) {
@@ -52,7 +52,7 @@ class Editor extends React.Component {
       const item = {
         title: this.props.title,
         description: this.props.description,
-        image: this.props.image,
+        image: this.props.image? this.props.image : "./placeholder.png",
         tagList: this.props.tagList,
       };
 
